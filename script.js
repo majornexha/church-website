@@ -1,4 +1,8 @@
-// Optional: Add interactivity (e.g., scroll events, animations)
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Website loaded.");
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
 });
