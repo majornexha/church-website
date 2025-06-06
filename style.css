@@ -1,0 +1,157 @@
+/* Reset + Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4b2e83;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #fcd34d;
+}
+
+/* Hero */
+.hero {
+    background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-text {
+    font-size: 2.5rem;
+    animation: fadeInDown 1.2s ease-out;
+}
+
+.hero-sub {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4b2e83;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.service-list li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Sermon Video */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.sermon-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sermon-link a {
+    color: #4b2e83;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background: #4b2e83;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
