@@ -62,23 +62,27 @@ a {
 
 /* Hero Section */
 .hero {
+    position: relative;
     background: url('https://images.unsplash.com/photo-1611856024643-3481df485b90') center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 100px 20px;
 }
 
-
-.hero-text {
-    font-size: 2.5rem;
-    animation: fadeInDown 1.2s ease-out;
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /* dark overlay */
 }
 
+.hero-text,
 .hero-sub {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    animation: fadeInUp 1.5s ease-out;
+    position: relative;
+    z-index: 1;
 }
+
 
 @keyframes fadeInDown {
     from {
